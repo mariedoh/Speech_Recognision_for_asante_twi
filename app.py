@@ -11,7 +11,6 @@ def load_audio(file_path, target_sr=16000):
     return audio
 
 st.write("Speech Recognition - Asante Twi")
-st.write("Upload a twi audio file")
 
 processor = WhisperProcessor.from_pretrained("openai/whisper-small")
 model, tokenizer = load_model()
