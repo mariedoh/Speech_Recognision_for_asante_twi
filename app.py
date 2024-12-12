@@ -42,4 +42,4 @@ if uploaded_file:
     
     # Output the transcription
     st.write("Transcription:")
-    st.text_area("Transcribed Text", transcription[0].encode('latin1', errors='ignore').decode('utf-8', errors='ignore'), height=200)
+    st.text_area("Transcribed Text", format_string(transcription[0].encode('latin1', errors='ignore').decode('utf-8', errors='ignore')), height=200)
